@@ -175,8 +175,7 @@ button, input{
     background-color: white;
     align-self: center;
     box-sizing: inherit;
-    margin-left: 15%;
-    margin-right: 20%;
+    margin-left: 0%;
     
     padding: 2.5rem 2.5rem 3rem 2.5rem; 
 }
