@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title> WebQuiz</title> 
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="heading">
+            <p class="logo" style="color: white;">
+                Gbolahan's Quiz </p> 
+                <nav >
+            <ul class="nav-list">
+                <li class="nav-item" style="padding-right: 40px;">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" style="padding-right: 40px;">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item " style="padding-right: 40px;">
+                    <a class="nav-link" href="#">Quiz</a>
+                </li>
+                <li class="nav-item " style="padding-right: 40px;">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        
+<section id="form" >
+                    <div class="main" style="padding: 2.5rem 2.5rem 3rem 2.5rem; ">
+                                <fieldset>
+                                    <p style="font-weight: bold; font-size: 50px;"> Quiz</p>
+                                    <div id="top" style="align-items: center;">
+                                        <section>
+                                            <h3> You have 12 minutes <br> Goodluck Your time starts now!</h6>
+                                <div id="clockdiv">
+                                  
+                                  
+                                  <div>
+                                    <span class="minutes"></span>
+                                    <div class="smalltext">Minutes</div>
+                                  </div>
+                                  <div>
+                                    <span class="seconds"></span>
+                                    <div class="smalltext">Seconds</div>
+                                  </div>
+                                </div>
+                                            </section>
+                                       <p> 
+                                        
+                                          <p style=" margin-top: 5px;">  Correct answers  <span id="counter">0</span> </p> 
+                                           <p style="background-color: rgb(241, 56, 56); margin-top: 5px;"> Remaining  <span id="numOfQuestion">10</span> questions</p>
+                                        </p>
+                                    </div>
+                                    
+         <div id="questions">
+            <p id="Currentquestion"></p>
+            
+            <ul id="answers"></ul>
+            <div id="buttons">
+                <button id="submit" class="disabled">Submit</button>
+                <button id="next" class="disabled">Next</button>
+            </div>
+        </div>
+
+    
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"><a href="index.html"> &times;</a></span>
+            <h3>Congratulations</h3>
+            <p id="modalContent"></p>
+            <p><a href="quiz.html">Re-take test?</a></p>
+            <p><a href="index.html">Go back</a></p>
+        </div>
+
+    </div>
+
+    </fieldset>
+     
+    </div> 
+ </section>
+     
+       
+        <section class="footer">
+            
+                <table>
+                    <tr>
+                        <td><div class="block" >
+                            <h4>Site Pages</h4>
+                            <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Quiz</a></li>
+                              <li><a href="#">Articles & Tips</a></li>
+                              
+                            </ul>
+                          </div></td>
+                          
+                    </tr>
+                    
+                </table><div class="copyright">
+                        <p>Copyright © <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                          </script>. All Rights Reserved, The WebQuiz</p>
+                      </div>
+            
+            </section>
+
+            <script src="script.js"></script>       
+
+</body>
+</html>

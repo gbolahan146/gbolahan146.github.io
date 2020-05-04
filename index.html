@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>
+      WebQuiz
+    </title> 
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <div class="heading">
+            <p class="logo" style="color: white;">
+                Gbolahan's Quiz </p> 
+                <nav >
+            <ul class="nav-list">
+                <li class="nav-item" style="padding-right: 40px;">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" style="padding-right: 40px;">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item " style="padding-right: 40px;">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
+                <li class="nav-item " style="padding-right: 40px;">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        
+            <section id="form" >
+                    <div class="main" style="padding: 2.5rem 2.5rem 3rem 2.5rem; ">
+                            <form action="#" method="get">
+                                <fieldset>
+                                    <p style="font-weight: bold; font-size: 38px; text-decoration: underline;">  Welcome to the Web Quiz</p>
+
+                                    <input type="text" id="fullname" name="fullname" placeholder=" Enter your name" size="30px" style="height: 40px;">
+
+                                     <input type="button" value="Submit" class="previous" onClick="pr()"><br>
+                                     Let's get started <span id="result" style="font-weight: bold;"></span>
+
+                                     <p style="text-decoration: underline; font-weight: bold;"> Instructions for the Quiz </p>
+                                      <p> You have 12 minutes for the Quiz </p>
+                                      <p> There are 5 questions in this quiz </p>
+                                      <p> Each question has a correct answer from 4 options </p>
+                                      <p> You have to submit before being able to proceed to next question</p>
+                                      <p> The correct answer is highlighted green and wrong choice is highlighted red </p>
+                            
+
+
+                                      <a href="quiz.html" class="btn">Begin Quiz</a>
+                                </fieldset>
+                            </form>
+                </div> 
+        </section>
+       
+        <section class="footer">
+            
+                <table>
+                    <tr>
+                        <td><div class="block" >
+                            <h4>Site Pages</h4>
+                            <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Quiz</a></li>
+                              <li><a href="#">Articles & Tips</a></li>
+                              
+                            </ul>
+                          </div></td>
+                          
+                    </tr>
+                    
+                </table><div class="copyright">
+                        <p>Copyright © <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                          </script>. All Rights Reserved, The WebQuiz</p>
+                      </div>
+            
+            </section>
+
+<script>
+function pr() {
+            document.getElementById("result").innerHTML = document.getElementById('fullname').value;
+          }
+</script>     
+
+</body>
+</html>
